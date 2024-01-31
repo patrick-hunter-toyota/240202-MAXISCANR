@@ -1,0 +1,23 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr225_maxiscanrdata_forms",
+      "Namespace": "Maxiscanr Datas (Forms)",
+      "Values": {
+        "Information": "955d2352-f32e-4be8-9280-fc0091a4dd44"
+      }
+    },
+    {
+      "Kind": "default.cds_cr225_maxiscanrdataset1_forms",
+      "Namespace": "MAXISCANR Data Set 1s (Forms)",
+      "Values": {
+        "Information": "15804e94-67f2-4369-b8f6-b3d242a9f86a"
+      }
+    },
+    {
+      "Kind": "default.cds_cr225_maxiscanr_inventory_forms",
+      "Namespace": "MAXISCANR_Inventories (Forms)",
+      "Values": {}
+    }
+  ]
+}

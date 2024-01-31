@@ -1,0 +1,118 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr225_maxiscanrdatas",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr225_maxiscanrdata",
+    "MaxGetRowsCount": 500,
+    "Name": "Maxiscanr Datas",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr225_class": "class",
+      "cr225_daysofsupply": "daysOfSupply",
+      "cr225_daysofsupplylowerthreshold": "daysOfSupplyLowerThreshold",
+      "cr225_daysofsupplyupperthreshold": "daysOfSupplyUpperThreshold",
+      "cr225_description": "Description",
+      "cr225_expectedleadtime": "expectedLeadTime",
+      "cr225_expiringthreshold": "expiringThreshold",
+      "cr225_inventoryparenttype": "inventoryParentType",
+      "cr225_inventorytype": "inventoryType",
+      "cr225_locationlocationidentifier": "location.locationIdentifier",
+      "cr225_maxiscanrdata_AsyncOperations": "System Jobs",
+      "cr225_maxiscanrdata_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr225_maxiscanrdata_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr225_maxiscanrdata_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr225_maxiscanrdata_ProcessSession": "Process Sessions",
+      "cr225_maxiscanrdata_SyncErrors": "Sync Errors",
+      "cr225_maxiscanrdataid": "Maxiscanr Data",
+      "cr225_name": "RecID",
+      "cr225_plannercode": "plannerCode",
+      "cr225_productpartnumber": "product.partNumber",
+      "cr225_quantity": "quantity",
+      "cr225_quantitylowerthreshold": "quantityLowerThreshold",
+      "cr225_quantityunits": "quantityUnits",
+      "cr225_quantityupperthreshold": "quantityUpperThreshold",
+      "cr225_reorderlevel": "reorderLevel",
+      "cr225_reservationorders": "reservationOrders",
+      "cr225_segment": "segment",
+      "cr225_shelflife": "shelfLife",
+      "cr225_value": "value",
+      "cr225_valuecurrency": "valueCurrency",
+      "cr225_velocitycode": "velocityCode",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Maxiscanr Datas",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Maxiscanr Datas (Views)",
+    "Name": "_cr225_maxiscanrdata_views",
+    "RelatedEntityName": "Maxiscanr Datas",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "210efe5e-0234-4f6a-81de-99615310ef2f": "Inactive Maxiscanr Datas",
+      "22248a31-ba26-42e7-9c2d-377094e152cd": "Maxiscanr Data Advanced Find View",
+      "3a53483d-0115-4508-ab6b-ed4eac6b99e5": "Active Maxiscanr Datas",
+      "8a03f9f3-a0f3-4e0d-8603-4d3bb90f79c4": "Maxiscanr Data Associated View",
+      "fad569e5-1654-490d-b6be-d9fb21ac331c": "Maxiscanr Data Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Maxiscanr Datas)",
+    "Name": "cr225_maxiscanrdata_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Maxiscanr Datas"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Maxiscanr Datas",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Maxiscanr Datas)",
+    "Name": "cr225_maxiscanrdata_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Maxiscanr Datas"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Maxiscanr Datas",
+    "Type": "OptionSetInfo"
+  }
+]
