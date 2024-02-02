@@ -409,3 +409,38 @@ Screen1 As screen:
         Y: =490
         ZIndex: =24
 
+    Label_Description As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =21
+        Text: =LookUp('Maxiscanr Datas',RecID=Label_ID.Text,Description)
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =25
+
+    StaticText_Description As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Description:"
+        Width: =560
+        X: =60
+        Y: =60
+        ZIndex: =26
+
