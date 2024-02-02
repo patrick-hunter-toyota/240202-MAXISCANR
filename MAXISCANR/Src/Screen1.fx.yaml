@@ -1,6 +1,34 @@
 Screen1 As screen:
-    Fill: =RGBA(204, 231, 246, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =124
+        HoverFill: =RGBA(164, 38, 44, 1)
+        PressedFill: =RGBA(164, 38, 44, 1)
+        Width: =637
+        X: =3
+        ZIndex: =1
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =78
+        HoverFill: =RGBA(164, 38, 44, 1)
+        PressedFill: =RGBA(164, 38, 44, 1)
+        Width: =637
+        X: =3
+        Y: =1058
+        ZIndex: =2
 
     Label_quantity As label:
         Align: =Align.Right
@@ -21,7 +49,7 @@ Screen1 As screen:
         Width: =156
         X: =276
         Y: =577
-        ZIndex: =2
+        ZIndex: =3
 
     Label_value As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -40,7 +68,7 @@ Screen1 As screen:
         Width: =156
         X: =276
         Y: =684
-        ZIndex: =3
+        ZIndex: =4
 
     Label_quantityUnits As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -58,7 +86,7 @@ Screen1 As screen:
         Width: =156
         X: =472
         Y: =586
-        ZIndex: =4
+        ZIndex: =5
 
     "'Image_Toyota Logo' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -74,6 +102,8 @@ Screen1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =287
+        X: =170
+        Y: =10
         ZIndex: =6
 
     "'Image_MAXISCANR Logo' As image":
@@ -83,14 +113,15 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =159
+        Height: =78
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =MAXISCANR
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =353
-        X: =287
+        Width: =260
+        X: =181
+        Y: =142
         ZIndex: =7
 
     "'StaticText_Stock on hand' As label":
@@ -102,13 +133,13 @@ Screen1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Dancing Script'
-        Height: =72
+        Height: =78
         Size: =21
         Text: |-
             ="Stock on hand:"
         Width: =213
         X: =37
-        Y: =586
+        Y: =483
         ZIndex: =8
 
     "'StaticText_Unit cost' As label":
@@ -120,13 +151,13 @@ Screen1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Dancing Script'
-        Height: =72
+        Height: =78
         Size: =21
         Text: |-
             ="Unit cost:"
         Width: =213
         X: =39
-        Y: =684
+        Y: =581
         ZIndex: =9
 
     "'StaticText_Update quantity' As label":
@@ -138,13 +169,13 @@ Screen1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Dancing Script'
-        Height: =72
+        Height: =78
         Size: =21
         Text: |-
             ="Update quantity:"
         Width: =237
         X: =39
-        Y: =871
+        Y: =768
         ZIndex: =10
 
     Button_UpdateButton As button:
@@ -177,8 +208,8 @@ Screen1 As screen:
         Size: =24
         Text: ="Update"
         Width: =280
-        X: =62
-        Y: =988
+        X: =181
+        Y: =964
         ZIndex: =11
 
     ComboBox_PartSelector As combobox:
@@ -210,8 +241,8 @@ Screen1 As screen:
         Size: =21
         Width: =575
         X: =39
-        Y: =232
-        ZIndex: =14
+        Y: =322
+        ZIndex: =12
 
     TextInput_QuantityInput As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -223,7 +254,7 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =74
+        Height: =80
         HintText: ="Update Value"
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
@@ -238,8 +269,8 @@ Screen1 As screen:
         Size: =21
         Width: =214
         X: =258
-        Y: =869
-        ZIndex: =15
+        Y: =766
+        ZIndex: =13
 
     Label_quantityUnits2 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -256,7 +287,7 @@ Screen1 As screen:
         Width: =156
         X: =484
         Y: =869
-        ZIndex: =16
+        ZIndex: =14
 
     Label_ID As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -279,7 +310,7 @@ Screen1 As screen:
         Width: =101
         X: =62
         Y: =124
-        ZIndex: =17
+        ZIndex: =15
 
     "'StaticText_Stock on hand_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -295,8 +326,8 @@ Screen1 As screen:
         Text: ="Select Part No."
         Width: =213
         X: =39
-        Y: =160
-        ZIndex: =18
+        Y: =250
+        ZIndex: =16
 
     "'StaticText_Stock on hand_2' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -314,7 +345,7 @@ Screen1 As screen:
         Width: =53
         X: =39
         Y: =124
-        ZIndex: =20
+        ZIndex: =17
 
     "BarcodeReader1 As 'Barcode Reader'":
         BorderFillColor: =RGBA(47, 81, 151, 1)
