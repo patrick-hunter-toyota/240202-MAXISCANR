@@ -42,7 +42,7 @@
       "MetaDataIDKey": "",
       "Name": "BarcodeReader1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -228,7 +228,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_UpdateButton",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -502,7 +502,7 @@
       "MetaDataIDKey": "",
       "Name": "ComboBox_PartSelector",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -780,7 +780,7 @@
       "MetaDataIDKey": "",
       "Name": "Image_MAXISCANR Logo",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1189,7 +1189,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_BarcodeScannerText",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1474,7 +1474,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_ID",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1763,7 +1763,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_quantity",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2033,7 +2033,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_quantityUnits",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2303,7 +2303,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_quantityUnits2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2573,7 +2573,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_value",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2931,7 +2931,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3150,7 +3150,7 @@
       "MetaDataIDKey": "",
       "Name": "StaticText_Scanned Part No:",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3420,7 +3420,7 @@
       "MetaDataIDKey": "",
       "Name": "StaticText_Stock on hand",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3690,7 +3690,7 @@
       "MetaDataIDKey": "",
       "Name": "StaticText_Stock on hand_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3960,7 +3960,7 @@
       "MetaDataIDKey": "",
       "Name": "StaticText_Stock on hand_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4230,7 +4230,7 @@
       "MetaDataIDKey": "",
       "Name": "StaticText_Unit cost",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4500,7 +4500,7 @@
       "MetaDataIDKey": "",
       "Name": "StaticText_Update quantity",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4777,7 +4777,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInput_QuantityInput",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
