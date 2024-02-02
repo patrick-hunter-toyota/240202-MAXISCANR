@@ -164,8 +164,9 @@ Screen1 As screen:
             =Patch('Maxiscanr Datas',
             LookUp('Maxiscanr Datas',RecID=Label_ID.Text),
                 {quantity: Value(TextInput_QuantityInput.Text)}
-            ); Navigate(Screen2,ScreenTransition.Fade);
-            Reset(ComboBox_PartSelector);Reset(TextInput_QuantityInput)
+            ); 
+            Navigate(Screen2,ScreenTransition.Fade);
+            Reset(ComboBox_PartSelector);Reset(TextInput_QuantityInput); UpdateContext({ScannerOn: 0}); Clear(colScannedItems)
         PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
@@ -269,9 +270,12 @@ Screen1 As screen:
         Font: =Font.'Segoe UI'
         Height: =72
         Size: =11
-        Text: |+
-            =LookUp('Maxiscanr Datas', 'product.partNumber'=ComboBox_PartSelector.Selected.'product.partNumber',RecID)
-            
+        Text: |-
+            =//this label looks up a part number in the Maxiscanr Datas table and returns the RecID as text. This text value is then used as the basis for the other lookups in the app like stock on hand, unit cost, unit of measure and patching new count values into the table
+            If
+                (ScannerOn = 1, 
+                    (LookUp('Maxiscanr Datas', 'product.partNumber'= First(colScannedItems).ScannedItem,RecID)), // if the scanner has been used, the ID lookup will be based off the scanned value
+                    (LookUp('Maxiscanr Datas', 'product.partNumber'=ComboBox_PartSelector.Selected.'product.partNumber',RecID))) // if the scanner has not been used, the ID lookup is based off the value selected in the ComboBox_PartSelector
         Width: =101
         X: =62
         Y: =124
@@ -311,4 +315,64 @@ Screen1 As screen:
         X: =39
         Y: =124
         ZIndex: =20
+
+    "BarcodeReader1 As 'Barcode Reader'":
+        BorderFillColor: =RGBA(47, 81, 151, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(56, 96, 178, 1)
+        Height: =70
+        HoverBorderColor: =RGBA(88, 115, 171, 1)
+        HoverContentColor: =RGBA(255, 255, 255, 1)
+        HoverFillColor: =RGBA(47, 81, 151, 1)
+        OnCancel: =false
+        OnScan: |-
+            =UpdateContext({ScannerOn: 1}) //defines context for a scanned value that exists in the app. Context is set to 1 when the scanner is used, and reset to 0 when either the submit or reset buttons are used.
+            ; 
+            Collect(colScannedItems,
+                {ScannedItem: First(BarcodeReader1.Barcodes).Value, ScannedTime: Now()}) //stores the scanned value in a collection
+        PressedBorderColor: =RGBA(56, 96, 178, 1)
+        PressedContentColor: =RGBA(56, 96, 178, 1)
+        PressedFillColor: =RGBA(255, 255, 255, 1)
+        TextColor: =RGBA(255, 255, 255, 1)
+        Width: =280
+        X: =0
+        Y: =313
+        ZIndex: =21
+
+    "'StaticText_Scanned Part No:' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Scanned Part No:"
+        Width: =560
+        Y: =404
+        ZIndex: =23
+
+    Label_BarcodeScannerText As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =21
+        Text: =First(colScannedItems).ScannedItem
+        Width: =560
+        X: =13
+        Y: =490
+        ZIndex: =24
 
