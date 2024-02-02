@@ -139,7 +139,7 @@ Screen1 As screen:
             ="Stock on hand:"
         Width: =213
         X: =39
-        Y: =646
+        Y: =596
         ZIndex: =8
 
     "'StaticText_Unit cost' As label":
@@ -157,7 +157,7 @@ Screen1 As screen:
             ="Unit cost:"
         Width: =213
         X: =39
-        Y: =737
+        Y: =667
         ZIndex: =9
 
     "'StaticText_Update quantity' As label":
@@ -175,7 +175,7 @@ Screen1 As screen:
             ="Update quantity:"
         Width: =237
         X: =39
-        Y: =828
+        Y: =748
         ZIndex: =10
 
     Button_UpdateButton As button:
@@ -241,7 +241,7 @@ Screen1 As screen:
         Size: =21
         Width: =575
         X: =39
-        Y: =466
+        Y: =436
         ZIndex: =12
 
     TextInput_QuantityInput As text:
@@ -269,7 +269,7 @@ Screen1 As screen:
         Size: =21
         Width: =296
         X: =318
-        Y: =834
+        Y: =754
         ZIndex: =13
 
     Label_quantityUnits2 As label:
@@ -358,6 +358,7 @@ Screen1 As screen:
         ZIndex: =21
 
     "'StaticText_Scanned Part No:' As label":
+        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -371,7 +372,8 @@ Screen1 As screen:
         Text: |-
             ="Scanned Part No:"
         Width: =560
-        Y: =404
+        X: =41
+        Y: =374
         ZIndex: =23
 
     Label_BarcodeScannerText As label:
