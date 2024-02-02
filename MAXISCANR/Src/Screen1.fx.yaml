@@ -52,7 +52,7 @@ Screen1 As screen:
         ZIndex: =3
 
     Label_value As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderColor: =RGBA(230, 230, 230, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -61,13 +61,13 @@ Screen1 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =72
+        Height: =62
         Size: =21
         Text: |
             =LookUp('Maxiscanr Datas',RecID=Label_ID.Text,value)
-        Width: =156
-        X: =276
-        Y: =684
+        Width: =294
+        X: =316
+        Y: =670
         ZIndex: =4
 
     Label_quantityUnits As label:
@@ -102,7 +102,7 @@ Screen1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =287
-        X: =170
+        X: =14
         Y: =10
         ZIndex: =6
 
@@ -120,8 +120,8 @@ Screen1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =260
-        X: =181
-        Y: =142
+        X: =27
+        Y: =134
         ZIndex: =7
 
     "'StaticText_Stock on hand' As label":
@@ -212,40 +212,8 @@ Screen1 As screen:
         Y: =946
         ZIndex: =11
 
-    ComboBox_PartSelector As combobox:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        ChevronBackground: =RGBA(255, 255, 255, 1)
-        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-        ChevronFill: =RGBA(33, 33, 33, 1)
-        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-        ChevronHoverFill: =RGBA(33, 33, 33, 1)
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["cr225_productpartnumber"]
-        Font: =Font.'Segoe UI'
-        Height: =70
-        HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
-        HoverFill: =RGBA(212, 212, 212, 1)
-        Items: ='Maxiscanr Datas'
-        PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(164, 38, 44, 1)
-        SearchFields: =["cr225_productpartnumber"]
-        SearchItems: =Search('Maxiscanr Datas',ComboBox_PartSelector.SearchText,"cr225_productpartnumber")
-        SelectionFill: =RGBA(164, 38, 44, 1)
-        SelectMultiple: =false
-        Size: =21
-        Width: =575
-        X: =39
-        Y: =436
-        ZIndex: =12
-
     TextInput_QuantityInput As text:
-        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderColor: =RGBA(230, 230, 230, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
         Default: =""
@@ -327,7 +295,7 @@ Screen1 As screen:
             ="ID:"
         Width: =53
         X: =39
-        Y: =124
+        Y: =164
         ZIndex: =17
 
     "BarcodeReader1 As 'Barcode Reader'":
@@ -354,7 +322,7 @@ Screen1 As screen:
         TextColor: =RGBA(255, 255, 255, 1)
         Width: =280
         X: =173
-        Y: =256
+        Y: =286
         ZIndex: =21
 
     "'StaticText_Scanned Part No:' As label":
@@ -372,11 +340,11 @@ Screen1 As screen:
         Text: |-
             ="Scanned Part No:"
         Width: =560
-        X: =41
-        Y: =374
+        X: =33
+        Y: =500
         ZIndex: =23
 
-    Label_BarcodeScannerText As label:
+    Label_Description As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -387,11 +355,11 @@ Screen1 As screen:
         Font: =Font.'Segoe UI'
         Height: =70
         Size: =21
-        Text: =First(colScannedItems).ScannedItem
+        Text: =LookUp('Maxiscanr Datas',RecID=Label_ID.Text,Description)
         Width: =560
-        X: =13
-        Y: =490
-        ZIndex: =24
+        X: =40
+        Y: =40
+        ZIndex: =25
 
     Button_UpdateButton_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -427,23 +395,6 @@ Screen1 As screen:
         Y: =946
         ZIndex: =25
 
-    Label_Description As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =70
-        Size: =21
-        Text: =LookUp('Maxiscanr Datas',RecID=Label_ID.Text,Description)
-        Width: =560
-        X: =40
-        Y: =40
-        ZIndex: =25
-
     StaticText_Description As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -458,7 +409,7 @@ Screen1 As screen:
         Text: |-
             ="Description:"
         Width: =560
-        X: =60
-        Y: =60
+        X: =38
+        Y: =373
         ZIndex: =26
 
