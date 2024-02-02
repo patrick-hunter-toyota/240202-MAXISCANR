@@ -132,14 +132,14 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
-        Font: =Font.'Dancing Script'
+        Font: =Font.'Segoe UI'
         Height: =78
         Size: =21
         Text: |-
             ="Stock on hand:"
         Width: =213
-        X: =37
-        Y: =483
+        X: =39
+        Y: =586
         ZIndex: =8
 
     "'StaticText_Unit cost' As label":
@@ -150,14 +150,14 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
-        Font: =Font.'Dancing Script'
+        Font: =Font.'Segoe UI'
         Height: =78
         Size: =21
         Text: |-
             ="Unit cost:"
         Width: =213
         X: =39
-        Y: =581
+        Y: =677
         ZIndex: =9
 
     "'StaticText_Update quantity' As label":
@@ -168,7 +168,7 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
-        Font: =Font.'Dancing Script'
+        Font: =Font.'Segoe UI'
         Height: =78
         Size: =21
         Text: |-
@@ -183,9 +183,9 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(127, 178, 57, 1)
+        Fill: =RGBA(255, 0, 0, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Great Vibes'
+        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -207,7 +207,7 @@ Screen1 As screen:
         Size: =24
         Text: ="Update"
         Width: =280
-        X: =181
+        X: =192
         Y: =964
         ZIndex: =11
 
@@ -240,7 +240,7 @@ Screen1 As screen:
         Size: =21
         Width: =575
         X: =39
-        Y: =322
+        Y: =466
         ZIndex: =12
 
     TextInput_QuantityInput As text:
@@ -267,7 +267,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =21
         Width: =214
-        X: =258
+        X: =318
         Y: =766
         ZIndex: =13
 
@@ -309,6 +309,7 @@ Screen1 As screen:
         ZIndex: =15
 
     "'StaticText_Stock on hand_1' As label":
+        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -316,13 +317,14 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
-        Font: =Font.'Dancing Script'
-        Height: =72
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =66
         Size: =21
-        Text: ="Select Part No."
-        Width: =213
-        X: =39
-        Y: =250
+        Text: ="SCAN QR/BARCODE"
+        Width: =361
+        X: =141
+        Y: =298
         ZIndex: =16
 
     "'StaticText_Stock on hand_2' As label":
